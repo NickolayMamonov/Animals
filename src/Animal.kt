@@ -1,5 +1,3 @@
-import kotlin.reflect.typeOf
-
 abstract class Animal constructor(food: String, location: String){
      var food: String? = null
      var location: String? = null

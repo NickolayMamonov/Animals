@@ -1,10 +1,10 @@
 fun main(){
     val vet = Vet()
-    val animals = arrayOf(
-        Dog("meat","dog house"),
-        Cat("fish","river"),
-        Horse("grass","field"))
-    for (i in animals){
-        vet.treatAnimal(i)
+    val animals = listOf(
+        Dog("meat","dog house","Woof!"),
+        Cat("fish","kitchen","Meow!"),
+        Horse("grass","field","Frrr!"))
+    animals.forEach{animal ->
+        vet.treatAnimal(animal)
     }
 }

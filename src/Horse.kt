@@ -1,6 +1,6 @@
-class Horse(food: String, location: String) : Animal(food, location) {
+class Horse(food: String, location: String,val noise: String) : Animal(food, location) {
     override fun makeNoise() {
-        println("I-i-i-i-i")
+        println("Horse make a sound $noise")
     }
     override fun eat() {
         println("Horse eat $food in $location.")
